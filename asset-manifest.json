@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.f53c2084.chunk.css",
-    "main.js": "/static/js/main.8de4a04f.chunk.js",
-    "main.js.map": "/static/js/main.8de4a04f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e8402bce.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e8402bce.js.map",
-    "static/js/2.ecfff268.chunk.js": "/static/js/2.ecfff268.chunk.js",
-    "static/js/2.ecfff268.chunk.js.map": "/static/js/2.ecfff268.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.65e656b485f8764cb90dc5c10a664659.js": "/precache-manifest.65e656b485f8764cb90dc5c10a664659.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f53c2084.chunk.css.map": "/static/css/main.f53c2084.chunk.css.map",
-    "static/js/2.ecfff268.chunk.js.LICENSE.txt": "/static/js/2.ecfff268.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/pen-avatar.d476a8b8.svg",
-    "static/media/Vector.svg": "/static/media/Vector.c6f11019.svg"
+    "main.css": "/shum89/mesto/static/css/main.ace2e4c8.chunk.css",
+    "main.js": "/shum89/mesto/static/js/main.b44bb7c5.chunk.js",
+    "main.js.map": "/shum89/mesto/static/js/main.b44bb7c5.chunk.js.map",
+    "runtime-main.js": "/shum89/mesto/static/js/runtime-main.f6d04f43.js",
+    "runtime-main.js.map": "/shum89/mesto/static/js/runtime-main.f6d04f43.js.map",
+    "static/js/2.ecfff268.chunk.js": "/shum89/mesto/static/js/2.ecfff268.chunk.js",
+    "static/js/2.ecfff268.chunk.js.map": "/shum89/mesto/static/js/2.ecfff268.chunk.js.map",
+    "index.html": "/shum89/mesto/index.html",
+    "precache-manifest.0b6aed5a6106098d77a60585ff8e9c72.js": "/shum89/mesto/precache-manifest.0b6aed5a6106098d77a60585ff8e9c72.js",
+    "service-worker.js": "/shum89/mesto/service-worker.js",
+    "static/css/main.ace2e4c8.chunk.css.map": "/shum89/mesto/static/css/main.ace2e4c8.chunk.css.map",
+    "static/js/2.ecfff268.chunk.js.LICENSE.txt": "/shum89/mesto/static/js/2.ecfff268.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/shum89/mesto/static/media/pen-avatar.d476a8b8.svg",
+    "static/media/Vector.svg": "/shum89/mesto/static/media/Vector.c6f11019.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8402bce.js",
+    "static/js/runtime-main.f6d04f43.js",
     "static/js/2.ecfff268.chunk.js",
-    "static/css/main.f53c2084.chunk.css",
-    "static/js/main.8de4a04f.chunk.js"
+    "static/css/main.ace2e4c8.chunk.css",
+    "static/js/main.b44bb7c5.chunk.js"
   ]
 }
