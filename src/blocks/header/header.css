@@ -1,0 +1,23 @@
+@import url(./__logo/header__logo.css);
+
+.header {
+    max-width: 1200px;
+    width: 68.89%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+    position: relative;
+    transition: ease all .5s;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 842px) {
+    .header {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-top: 28px;
+    }
+}
