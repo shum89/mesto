@@ -17,4 +17,4 @@ class ImagePopup extends React.Component {
 
 }
 
-export default ImagePopup
+export default ImageпPopup
