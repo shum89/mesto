@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/shum89/mesto/static/css/main.ace2e4c8.chunk.css",
-    "main.js": "/shum89/mesto/static/js/main.b44bb7c5.chunk.js",
-    "main.js.map": "/shum89/mesto/static/js/main.b44bb7c5.chunk.js.map",
-    "runtime-main.js": "/shum89/mesto/static/js/runtime-main.f6d04f43.js",
-    "runtime-main.js.map": "/shum89/mesto/static/js/runtime-main.f6d04f43.js.map",
-    "static/js/2.ecfff268.chunk.js": "/shum89/mesto/static/js/2.ecfff268.chunk.js",
-    "static/js/2.ecfff268.chunk.js.map": "/shum89/mesto/static/js/2.ecfff268.chunk.js.map",
-    "index.html": "/shum89/mesto/index.html",
-    "precache-manifest.0b6aed5a6106098d77a60585ff8e9c72.js": "/shum89/mesto/precache-manifest.0b6aed5a6106098d77a60585ff8e9c72.js",
-    "service-worker.js": "/shum89/mesto/service-worker.js",
-    "static/css/main.ace2e4c8.chunk.css.map": "/shum89/mesto/static/css/main.ace2e4c8.chunk.css.map",
-    "static/js/2.ecfff268.chunk.js.LICENSE.txt": "/shum89/mesto/static/js/2.ecfff268.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/shum89/mesto/static/media/pen-avatar.d476a8b8.svg",
-    "static/media/Vector.svg": "/shum89/mesto/static/media/Vector.c6f11019.svg"
+    "main.css": "/mesto/static/css/main.f8ef05de.chunk.css",
+    "main.js": "/mesto/static/js/main.e44bc17b.chunk.js",
+    "main.js.map": "/mesto/static/js/main.e44bc17b.chunk.js.map",
+    "runtime-main.js": "/mesto/static/js/runtime-main.fa38e68f.js",
+    "runtime-main.js.map": "/mesto/static/js/runtime-main.fa38e68f.js.map",
+    "static/js/2.ecfff268.chunk.js": "/mesto/static/js/2.ecfff268.chunk.js",
+    "static/js/2.ecfff268.chunk.js.map": "/mesto/static/js/2.ecfff268.chunk.js.map",
+    "index.html": "/mesto/index.html",
+    "precache-manifest.e0bfb580fd27580a39ff571519fecf79.js": "/mesto/precache-manifest.e0bfb580fd27580a39ff571519fecf79.js",
+    "service-worker.js": "/mesto/service-worker.js",
+    "static/css/main.f8ef05de.chunk.css.map": "/mesto/static/css/main.f8ef05de.chunk.css.map",
+    "static/js/2.ecfff268.chunk.js.LICENSE.txt": "/mesto/static/js/2.ecfff268.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/mesto/static/media/pen-avatar.d476a8b8.svg",
+    "static/media/Vector.svg": "/mesto/static/media/Vector.c6f11019.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f6d04f43.js",
+    "static/js/runtime-main.fa38e68f.js",
     "static/js/2.ecfff268.chunk.js",
-    "static/css/main.ace2e4c8.chunk.css",
-    "static/js/main.b44bb7c5.chunk.js"
+    "static/css/main.f8ef05de.chunk.css",
+    "static/js/main.e44bc17b.chunk.js"
   ]
 }
