@@ -1,24 +1,40 @@
 import  {urlPath, baseUrl, headers} from './constants';
+
+/**
+ * @class Api
+ * @classdesc class for an api requests
+ */
  class Api {
     constructor({baseUrl, headers}) {
         this._url = baseUrl;
         this._headers = headers;
     }
-// запрос
+
+    /**
+     * Basic method for fetching data
+     * @param path {string} - path for an api request
+     * @param params {Object} - object with headers, methods and body
+     * @returns {Promise<Response>} - returns promise if request is successful
+     * @private
+     */
     _fetchData(path, params) {
         return fetch(`${this._url}${path}`, params).then(res => {
             if (res.ok) {
                 return res.json()
             }
-           return Promise.reject(`Oh my, ошибочка вышла:${res.status}`)
+           return Promise.reject(new Error(`Ошибка: ${res.status}`))
         })
     }
-// получаем информация о пользователе
+
+    /**
+     * Get User info
+     * @returns {Promise<Response>} - object with user info
+     */
     getUserInfo() {
         return this._fetchData(urlPath.userInfo, {headers: this._headers})
     }
 
-// меняем данные пользователя
+
     updateUserInfo(data) {
         return this._fetchData(urlPath.userInfo, {
             headers: this._headers,
@@ -34,7 +50,11 @@ import  {urlPath, baseUrl, headers} from './constants';
             body: JSON.stringify(data),
         })
     }
-// получаем карточки изначальные
+
+    /**
+     * Gets initial cards
+     * @returns {Promise<Response>} - array of objects with cards info
+     */
     getInitialCards() {
         return this._fetchData(urlPath.cards, {headers: this._headers})
     }

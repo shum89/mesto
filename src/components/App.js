@@ -1,44 +1,66 @@
 import React from 'react';
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import './index.css';
-import PopupWithForm from "./components/PopupWithForm";
-import ImagePopup from "./components/ImagePopup";
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
+import '../index.css';
+import PopupWithForm from "./PopupWithForm";
+import ImagePopup from "./ImagePopup";
 
+/**
+ * Create an app from the components
+ * @returns {string} - HTML-markup
+ * @constructor
+ */
 function App() {
-    // cтейты попапов
-
-const [isEditProfileOpen, setEditProfilePopup] = React.useState(false);
+   /**
+    * Popup with form states
+    */
+    const [isEditProfileOpen, setEditProfilePopup] = React.useState(false);
 const [isAddPlacePopupOpen, setAddPlacePopup] = React.useState(false);
 const [isEditAvatarPopupOpen, setEditAvatarPopup] = React.useState(false);
-const [selectedCard, setSelectedCardPopup] = React.useState('');
 
-    // хендлеры попапов
+    /**
+     * Popup with image state
+     */
+    const [selectedCard, setSelectedCardPopup] = React.useState(undefined);
+
+/**
+ *  handles user click on a card
+ * @param {Object} card - card object that corresponds to a card that user clicked on
+ */
 
 function handleCardClick(card) {
     setSelectedCardPopup(card)
 }
-
+/**
+ * handles user click on avatar
+ */
   function handleEditAvatarClick ()  {
-     setEditAvatarPopup(!isEditProfileOpen);
+     setEditAvatarPopup(true);
+  }
+    /**
+     * handles user click on profile edit button
+     */
+    function handleEditProfileClick  ()  {
+    setEditProfilePopup(true);
   }
 
- function handleEditProfileClick  ()  {
-    setEditProfilePopup(!isAddPlacePopupOpen);
+    /**
+     * handles user click on add place button
+     */
+    function handleAddPlaceClick ()  {
+    setAddPlacePopup(true);
   }
 
-   function handleAddPlaceClick ()  {
-    setAddPlacePopup(!isEditAvatarPopupOpen);
-  }
-
-    // закрытие попапов
+   /**
+    * closes all popups
+    */
 
   function closeAllPopups () {
       setAddPlacePopup(false);
       setEditAvatarPopup(false);
       setEditProfilePopup(false);
-      setSelectedCardPopup('');
+      setSelectedCardPopup(undefined);
   }
 
   return (

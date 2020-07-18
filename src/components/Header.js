@@ -1,15 +1,17 @@
 import React from "react";
 import logo from "../images/Vector.svg";
 
-class Header extends React.Component {
+/**
+ * Header component
+ * @returns {string} - HTML-markup for a Header
+ */
+function Header() {
 
-    render() {
         return (
             <header className="header">
                 <img className="header__logo" src={logo} alt="Логотип"/>
             </header>
         )
-    }
 
 }
 
