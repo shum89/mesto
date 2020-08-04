@@ -3,7 +3,7 @@ import logo from "../images/Vector.svg";
 
 /**
  * Header component
- * @returns {string} - HTML-markup for a Header
+ * @return {JSX.Element}
  */
 function Header() {
 

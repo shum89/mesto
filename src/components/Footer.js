@@ -1,8 +1,9 @@
 import React from "react";
 
 /**
- * Footer components
- * @returns {string} - HTML-markup for a Footer
+ * footer component
+ * @return {JSX.Element}
+ * @constructor
  */
 function Footer() {
     return (

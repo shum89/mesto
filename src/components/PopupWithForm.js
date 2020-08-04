@@ -9,24 +9,28 @@ import React from "react";
  * @property {function} onClose - handler for closing popup
  * @property {Boolean} isOpen - popup state
  */
-class PopupWithForm extends React.Component {
+function PopupWithForm({buttonTitle, children, name, title,
+                           onClose, isOpen, onSubmit, isDisabled,
+                           renderSubmitAnimation}){
 
-    render() {
-        const {buttonTitle, onClose, children, name, title, isOpen} = this.props;
-        return (
-            <div className={`popup popup_type_${name} ${isOpen ? 'popup_opened' : ''}`}>
-                    <div className="popup__container">
-                        <h2 className="popup__title">{title}</h2>
-                        <button className="popup__button-close" onClick={onClose} type="button"/>
-                        <form className="popup__form" name={name}>
-                            {children}
-                            <button className="popup__button-submit popup__button-submit_action" type="submit">{buttonTitle}</button>
-                        </form>
-                    </div>
-                    <div className="popup__overlay" onClick={onClose}/>
-                </div>
-        )
-        }
 
+    return (
+        <div className={`popup popup_type_${name} ${isOpen ? 'popup_opened' : null}`}>
+            <div className="popup__container">
+                <h2 className="popup__title">{title}</h2>
+                <button className="popup__button-close" onClick={onClose} type="button"/>
+                <form className="popup__form" name={name} onSubmit={onSubmit}>
+                    {children}
+                    <button className={`popup__button-submit popup__button-submit_action 
+                    ${renderSubmitAnimation ? 'popup__button-submit_loading' : null}
+                    ${isDisabled ? null : 'popup__button-submit_disabled'}`
+                    }
+                            type="submit">{buttonTitle}</button>
+                </form>
+            </div>
+            <div className="popup__overlay" onClick={onClose}/>
+        </div>
+    )
 }
+
 export default PopupWithForm

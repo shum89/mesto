@@ -1,8 +1,9 @@
 import  {urlPath, baseUrl, headers} from './constants';
 
 /**
- * @class Api
- * @classdesc class for an api requests
+ *  Api for mesto
+ *  @param {string} baseUrl
+ *  @param {object} headers
  */
  class Api {
     constructor({baseUrl, headers}) {
@@ -15,7 +16,6 @@ import  {urlPath, baseUrl, headers} from './constants';
      * @param path {string} - path for an api request
      * @param params {Object} - object with headers, methods and body
      * @returns {Promise<Response>} - returns promise if request is successful
-     * @private
      */
     _fetchData(path, params) {
         return fetch(`${this._url}${path}`, params).then(res => {
@@ -34,7 +34,11 @@ import  {urlPath, baseUrl, headers} from './constants';
         return this._fetchData(urlPath.userInfo, {headers: this._headers})
     }
 
-
+    /**
+     * update user info
+     * @param {object} data
+     * @return {Promise<Response>}
+     */
     updateUserInfo(data) {
         return this._fetchData(urlPath.userInfo, {
             headers: this._headers,
@@ -42,7 +46,12 @@ import  {urlPath, baseUrl, headers} from './constants';
             body: JSON.stringify(data),
         })
     }
-// меняем аватар
+
+    /**
+     * update user avatar
+     * @param {object} data
+     * @return {Promise<Response>}
+     */
     updateUserAvatar(data) {
         return this._fetchData(`${urlPath.userInfo}${urlPath.avatar}`, {
             headers: this._headers,
@@ -58,7 +67,12 @@ import  {urlPath, baseUrl, headers} from './constants';
     getInitialCards() {
         return this._fetchData(urlPath.cards, {headers: this._headers})
     }
-// добавляем карточку
+
+    /**
+     * post new card
+     * @param {object} data
+     * @return {Promise<Response>}
+     */
     postNewCard(data) {
         return this._fetchData(urlPath.cards, {
             headers: this._headers,
@@ -66,15 +80,26 @@ import  {urlPath, baseUrl, headers} from './constants';
             body: JSON.stringify(data)
         })
     }
-// удаляем карточку
+
+    /**
+     * delete card
+     * @param {string} card id
+     * @return {Promise<Response>}
+     */
     deleteCard(id) {
         return this._fetchData(`${urlPath.cards}${id}`, {
             method: 'DELETE',
             headers: this._headers,
         });
     }
-    // ставим лайк или убираем
-    like(id, isLiked) {
+
+    /**
+     * set like
+     * @param {string} id card id
+     * @param {boolean} isLiked
+     * @return {Promise<Response>}
+     */
+    setLike(id, isLiked) {
         let method;
         if (isLiked) {
             method = 'DELETE';

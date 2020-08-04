@@ -13,7 +13,7 @@
     }
 }
 .popup__button-submit_loading {
-    
+    background: black;
 }
 
 .popup__button-submit_loading::after {
