@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "021d1f783e9cf94fef22a1126144be5c",
+    "revision": "43601ab58992d3e793357adf3af09274",
     "url": "/mesto/index.html"
   },
   {
-    "revision": "e57b48244a82a4345f40",
+    "revision": "73f31feed84b5631028f",
     "url": "/mesto/static/css/main.a8326c06.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mesto/static/js/2.e3b335cf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e57b48244a82a4345f40",
-    "url": "/mesto/static/js/main.34890b3c.chunk.js"
+    "revision": "73f31feed84b5631028f",
+    "url": "/mesto/static/js/main.c518fec6.chunk.js"
   },
   {
     "revision": "0822ee0cfa03ca177236",
