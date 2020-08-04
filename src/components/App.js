@@ -195,7 +195,7 @@ const [isLoading, setLoading] = React.useState(false);
 
 
   return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
       <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
         <Header/>
