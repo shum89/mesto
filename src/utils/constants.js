@@ -27,4 +27,4 @@ export const headers = {
  * base url for giphy api
  * @type {string}
  */
-export const giphyUrl = `http://api.giphy.com/v1/gifs/random?tag=dogs&rating=g&api_key=xZXsHMfcYYAZ8rEhdSEGmIGqudaSbeg7`
+export const giphyUrl = `https://api.giphy.com/v1/gifs/random?tag=dogs&rating=g&api_key=xZXsHMfcYYAZ8rEhdSEGmIGqudaSbeg7`
