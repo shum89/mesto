@@ -26,7 +26,8 @@ export const reducerForForm = (state, {field, type, value}, initialFormValueStat
             };
             let formIsValid = true;
             for (const key in updatedValidities) {
-                formIsValid = (formIsValid && updatedValidities[key])
+                const keyValue = key.replace('Validity', '');
+                formIsValid = (formIsValid && updatedValidities[key] && updateValues[keyValue])
             }
             return {
                 inputValidities: updatedValidities,
